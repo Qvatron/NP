@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Введите данные</h1>
+
+
+    <script>
+        // function RandomPassword(){
+        // var StringPassword = "",
+        //          StringSymbols = "1234567890qwertyuiopasdfghjklzxcvbnm",
+        //     CountRandom = 10 ;
+        // for (var i = 0; i<CountRandom; i++) {
+        //          Random = Math.round(Math.random()*StringSymbols.length);
+        //     var RandomUpper = Math.round(Math.random()*10);
+        //          if (RandomUpper>=5) {StringPassword += StringSymbols[Random].toUpperCase()}
+        //         if (RandomUpper<5) {StringPassword += StringSymbols[Random].toLowerCase()}      
+        // }
+         
+        // document.write("Пароль: "+StringPassword);
+        // }
+        </script>
+
+
+    <form  action="/register"  method="post">
+        <label>Логин</label></br>
+        <input type="text" name="userLogin" /></br></br>
+        <label>Фамилия</label></br>
+        <input type="text" name="userSurname" /></br></br>
+        <label>Имя</label></br>
+        <input type="text" name="userName" /></br></br>
+        <label>Отчество</label></br>
+        <input type="text" name="userPatron" /></br></br>
+        <label>Серия паспорта</label></br>
+        <input type="number" name="userPassSer" /></br></br>
+        <label>Номер паспорта</label></br>
+        <input type="number" name="userPassNum" /></br></br>
+        <input type="submit" value="Отправить" />
+    </form>
+    <script>
+ 
+        // document.getElementById("submit").addEventListener("click", function (e) {
+        //      e.preventDefault();
+        //     // получаем данные формы
+        //     let registerForm = document.forms["registerForm"];
+        //     let userLogin = registerForm.elements["userLogin"].value;
+        //     let userSurname = registerForm.elements["userSurname"].value;
+        //     let userName = registerForm.elements["userName"].value;
+        //     let userPatron = registerForm.elements["userPatron"].value;
+        //     let userPassSer = registerForm.elements["userPassSer"].value;
+        //     let userPassNum = registerForm.elements["userPassNum"].value;
+        //     // сериализуем данные в json
+        //     let user = JSON.stringify({userLogin: userLogin, userSurname: userSurname, userName: userName, userPatron: userPatron, userPassSer: userPassSer, userPassNum: userPassNum});
+        //     let request = new XMLHttpRequest();
+        //     // посылаем запрос на адрес "/user"
+        //      request.open("POST", "/user", true);   
+        //      request.setRequestHeader("Content-Type", "application/json");
+        //      request.addEventListener("load", function () {
+        //         // получаем и парсим ответ сервера
+        //          let receivedUser = JSON.parse(request.response);
+        //          console.log(receivedUser.userLogin, "-", receivedUser.userSurname, "-", receivedUser.userName, "-", receivedUser.userPatron, "-", receivedUser.userPassSer, "-", receivedUser.userPassNum, "-",receivedUser.userPassword);   // смотрим ответ сервера
+        //      });
+        //      request.send(user);
+        //  });
+    </script>
+</body>
+<html>
